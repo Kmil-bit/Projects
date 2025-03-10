@@ -4,17 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace ConsoleApp8
 {
 	internal class Pies:Zwierz
 	{
-		public Pies(string imiePsa)
+		public Pies()
 		{
-
+            Console.WriteLine("Wpisz Imie");
+            imie = Console.ReadLine();
 		}
-		public override void dajGlos()
+		public int wiek;
+		public int waga;
+		public string imie;
+
+		public override void DajGlos()
 		{
-            Console.WriteLine("Hauu");
+            Console.WriteLine("NIGGER");
         }
 	}
 }

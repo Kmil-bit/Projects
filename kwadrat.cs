@@ -4,25 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace ConsoleApp8
 {
 	internal class kwadrat
 	{
-		int a;
-
-		public void podajDane()
+		public kwadrat() 
 		{
-            Console.WriteLine("Podaj dl boku A");
-			int a = Int32.Parse(Console.ReadLine());
-		}
-
-		public void pole()
-		{
-			Console.WriteLine(a * a);
-		}
-		public void obwod()
-		{
-            Console.WriteLine(4*a);
+            Console.WriteLine("Co chcesz policzyć?");
+            Console.WriteLine("Pole - 1");
+            Console.WriteLine("Obwod - 2");
+			int decyzja = int.Parse(Console.ReadLine());
+			if (decyzja == 1)
+			{
+				Obwod();
+			}else if(decyzja == 2)
+			{
+				Pole();
+			}
         }
+		public void Obwod()
+		{
+            Console.WriteLine("Podaj bok");
+			int bok = int.Parse(Console.ReadLine());
+            Console.WriteLine(bok*4);
+        }
+		public void Pole()
+		{
+			Console.WriteLine("Podaj bok");
+			int bok = int.Parse(Console.ReadLine());
+			Console.WriteLine(bok * bok);
+		}
 	}
 }

@@ -1,43 +1,27 @@
-﻿namespace ConsoleApp6
+﻿namespace ConsoleApp8
 {
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-            Console.WriteLine("Która figura");
-            Console.WriteLine("1-kwadrat");
-            Console.WriteLine("2-prostokat");
-			string decyzja = Console.ReadLine();
-			if( decyzja == "1")
+            Console.WriteLine("Co chcesz policzyc?");
+			string[] lista = { "Kwadrat","Prostokat","trojkat"};
+			for(int i = 0; i < lista.Length; i++)
 			{
-                kwadrat k1 = new kwadrat();
-                Console.WriteLine("1-pole");
-                Console.WriteLine("2-obow");
-				string coRobimy = Console.ReadLine();
-				if (coRobimy == "1")
-				{
-					k1.pole();
-                }
-				if(coRobimy == "2")
-				{
-                    k1.obwod();
-                }
-            }
-			if(decyzja == "1")
+				Console.WriteLine(i+1 +" "+lista[i]);
+			}
+			int decyzja = int.Parse(Console.ReadLine());
+			if (decyzja=='1')
 			{
-                prostokat k1 = new prostokat();
-                Console.WriteLine("1-poole");
-                Console.WriteLine("2-obwod");
-				string coRobimy = Console.ReadLine();
-				if(coRobimy == "1")
-				{
-					k1.pole();
-				}
-				if(coRobimy == "2")
-				{
-					k1.obwod();
-				}
-            }
+				kwadrat kwadrat = new kwadrat();
+			}else if (decyzja == 2)
+			{
+				prostokat prostokat = new prostokat();
+			}
+			else
+			{
+				trojkat trojkat = new trojkat();
+			}
         }
 	}
 }

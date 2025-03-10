@@ -4,22 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace ConsoleApp8
 {
-	abstract class Zwierz
+	internal class Zwierz
 	{
-		int waga;
-		int wiek;
-
-		public string imie;
-		public void przedstawSie()
+		public virtual void  DajGlos()
 		{
-            Console.WriteLine(imie);
-        }
-
-		public virtual void dajGlos()
-		{
-            Console.WriteLine("Wrrr");
+            Console.WriteLine("Shimmy Shimmy ya");
         }
 	}
 }

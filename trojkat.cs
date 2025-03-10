@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp8
 {
-	internal class prostokat
+	internal class trojkat
 	{
-		public prostokat()
+		public trojkat()
 		{
 			Console.WriteLine("Co chcesz policzyć?");
 			Console.WriteLine("Pole - 1");
@@ -29,15 +29,19 @@ namespace ConsoleApp8
 			int bok1 = int.Parse(Console.ReadLine());
 			Console.WriteLine("Podaj drugi bok");
 			int bok2 = int.Parse(Console.ReadLine());
-			Console.WriteLine(bok1 * 2 + bok2 * 2);
+			Console.WriteLine("Podaj trzeci bok");
+			int bok3 = int.Parse(Console.ReadLine());
+			Console.WriteLine(bok1 + bok2 + bok3);
+
 		}
 		public void Pole()
 		{
 			Console.WriteLine("Podaj pierwszy bok");
 			int bok1 = int.Parse(Console.ReadLine());
-			Console.WriteLine("Podaj drugi bok");
-			int bok2 = int.Parse(Console.ReadLine());
-			Console.WriteLine(bok1 * bok2);
-		}
+			Console.WriteLine("Podaj wysokosc");
+			int wys = int.Parse(Console.ReadLine());
+            Console.WriteLine(bok1*wys/2);
+
+        }
 	}
 }

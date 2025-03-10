@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp6
+namespace ConsoleApp8
 {
 	internal class Kot:Zwierz
 	{
-		public override void dajGlos()
+		public int wiek;
+		public int waga;
+		public string imie;
+
+		public void DajGlos()
 		{
-            Console.WriteLine("Miauu");
-        }
+			Console.WriteLine("FAGGOT");
+		}
 	}
 }
