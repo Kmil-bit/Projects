@@ -1,0 +1,101 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+}
+
+aside {
+    width: 300px;
+    padding: auto;
+    background-color: orange;
+}
+
+hr {
+    height: 7px;
+    width: auto;
+    background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: cornsilk;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    aside {
+        width: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+    aside,
+    main {
+        width: 100%;
+    }
+}
+
+#one {
+    display: flex;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    background-color: yellow;
+}
+
+#two {
+    display: flex;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    background-color: darkgreen;
+}
+
+#three {
+    display: flex;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    background-color: cornsilk;
+}
+
+.theme-picker span {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+article p {
+    margin-left: 20px;
+}
